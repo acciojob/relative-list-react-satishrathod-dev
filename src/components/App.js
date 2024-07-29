@@ -59,7 +59,9 @@ function RelativesList() {
       <h1>Relative List</h1>
       <ol id="relativeList">
         {relatives.map((relative, index) => (
-          <li key={`relativeListItem${index + 1}`}>{relative}</li>
+          <li id={`relativeListItem${index + 1}`} key={index}>
+            {relative}
+          </li>
         ))}
       </ol>
     </div>
